@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: 33% 1fr 33%;
+    grid-template-rows: 10vh 50vh 40vh;
+    grid-template-areas: 
+    'he he he'
+    'mn mn mn'
+    'sc sc sc'
+}
+
+
+
+header {
+    grid-area: he;
+    background-color: #563663;
+}
+
+main {
+    grid-area: mn;
+    background-color: #9b59b6;
+    border: black;
+}
+
+section {
+    grid-area: sc;
+    background-color: #a27fb0;
+    border: black;
+}

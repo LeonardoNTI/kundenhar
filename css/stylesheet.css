@@ -16,17 +16,23 @@ body{
 
 header {
     grid-area: he;
-    background-color: #563663;
+    background-color: white;
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+    z-index: 2; /* Ensure the header is above the main section */
 }
 
 main {
     grid-area: mn;
-    background-color: #9b59b6;
-    border: black;
+    background-image: url(/img/guy-running-maintan.jpg);
+    background-position:center -25rem;
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 
 section {
     grid-area: sc;
-    background-color: #a27fb0;
-    border: black;
+    background-image: url(/img/Landing-page-backgrund.png);
+    background-position: right;
+    background-size: 36rem;
+    background-repeat:no-repeat;
 }

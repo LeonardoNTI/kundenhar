@@ -23,8 +23,8 @@ header {
 
 main {
     grid-area: mn;
-    background-image: url(/img/guy-running-maintan.jpg);
-    background-position:center -25rem;
+    background-image: url(/img/Landingpage-main-background.jpg);
+    background-position:center -1rem;
     background-size:cover;
     background-repeat:no-repeat;
 }

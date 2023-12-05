@@ -1,15 +1,15 @@
-body{
+body {
     margin: 0px;
 }
 
-#wrapper{
+#wrapper {
     display: grid;
     grid-template-columns: 33% 1fr 33%;
     grid-template-rows: 10vh 50vh 40vh;
-    grid-template-areas: 
-    'he he he'
-    'mn mn mn'
-    'sc sc sc'
+    grid-template-areas:
+        'he he he'
+        'mn mn mn'
+        'sc sc sc'
 }
 
 
@@ -17,22 +17,51 @@ body{
 header {
     grid-area: he;
     background-color: white;
-    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.3); /* Adjust the values as needed */
-    z-index: 2; /* Ensure the header is above the main section */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    /* Adjust the values as needed */
+    z-index: 2;
+    /* Ensure the header is above the main section */
 }
 
 main {
     grid-area: mn;
     background-image: url(/img/Landingpage-main-background.jpg);
-    background-position:center -1rem;
-    background-size:cover;
-    background-repeat:no-repeat;
+    background-position: -1rem;
+    background-size: 105%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.3);
+    /* Adjust the values as needed */
 }
 
 section {
     grid-area: sc;
-    background-image: url(/img/Landing-page-backgrund.png);
-    background-position: right;
+    background-image: url(/img/Landing-page-backgrund-right.png), url(/img/Landing-page-backgrund-left.png);
+    background-position: right, left;
     background-size: 36rem;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 290px;
+    margin-top: 40px;
+}
+
+#container1 {
+    display: flex;
+    background-color: aqua;
+    width: 250px;
+    height: 200px;
+}
+
+#container2 {
+    display: flex;
+    background-color: aqua;
+    width: 250px;
+    height: 200px;
+}
+
+#container3 {
+    display: flex;
+    background-color: aqua;
+    width: 250px;
+    height: 200px;
 }

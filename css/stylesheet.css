@@ -1,3 +1,4 @@
+
 body {
     margin: 0px;
 }
@@ -14,14 +15,23 @@ body {
 
 
 
-header {
+.mainHeader {
     grid-area: he;
     background-color: white;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
-    /* Adjust the values as needed */
     z-index: 2;
-    /* Ensure the header is above the main section */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 3px solid #9b59b6;
 }
+
+.mainHeader img {
+    height: 30px;
+}
+
 
 main {
     grid-area: mn;
@@ -30,7 +40,7 @@ main {
     background-size: 105%;
     background-repeat: no-repeat;
     box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.3);
-    /* Adjust the values as needed */
+    border-bottom: 2px solid #9b59b6;
 }
 
 section {
@@ -42,26 +52,59 @@ section {
     display: flex;
     justify-content: space-between;
     padding: 0px 290px;
-    margin-top: 40px;
+    margin-top: 30px;
+    color: white;
 }
 
 #container1 {
     display: flex;
     background-color: aqua;
-    width: 250px;
-    height: 200px;
+    background-image: url(/img/artiklar-unsplash.jpg);
 }
 
 #container2 {
     display: flex;
     background-color: aqua;
-    width: 250px;
-    height: 200px;
+    background-image: url(/img/Profesionell-unsplash.jpg);
+    background-position: center;
 }
 
 #container3 {
     display: flex;
     background-color: aqua;
+    background-image: url(/img/kost-unsplash.jpg);
+}
+
+#container1, #container2, #container3{
+    flex-direction:column;
+    justify-content: space-between;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid #9b59b6;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 1px rgba(0, 0, 0, 0.3);
+    background-color: aqua;
     width: 250px;
     height: 200px;
+}
+
+.box-header{
+    background-color: rgba(128, 128, 128, 0.53);
+    height: 40px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.box-header h2{
+    margin: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.box-footer{
+    height: 70px;
+    background-color: rgba(128, 128, 128, 0.361);
+}
+
+.box-footer p{
+    margin: 5px;
 }

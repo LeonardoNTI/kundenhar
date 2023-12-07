@@ -30,6 +30,28 @@ body {
 
 .mainHeader img {
     height: 30px;
+    padding: 5px;
+}
+
+.mainHeader a {
+    text-decoration: none;
+    color:black;
+}
+
+#header_container{
+    width: auto;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+#header_container a{
+    margin-right: 20px;
+}
+
+#header_container a:hover {
+    color: #9b59b6;
+    font-weight: 800;
 }
 
 
@@ -86,12 +108,20 @@ section {
     background-color: aqua;
     width: 250px;
     height: 200px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+#container1:hover, #container2:hover, #container3:hover{
+    transform: scale(1.1);
 }
 
 .box-header{
     background-color: rgba(128, 128, 128, 0.53);
     height: 40px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .box-header h2{

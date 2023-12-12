@@ -1,6 +1,9 @@
-
 body {
     margin: 0px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 #wrapper {
@@ -18,12 +21,14 @@ body {
 .mainHeader {
     grid-area: he;
     background-color: white;
+    position: fixed;
+    width: 100vw;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
     z-index: 2;
-    display: flex; 
+    display: flex;
     justify-content: space-between;
-    align-items: center; 
-    padding: 10px; 
+    align-items: center;
+    padding-left: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-bottom: 3px solid #9b59b6;
 }
@@ -36,17 +41,18 @@ body {
 
 .mainHeader a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-#header_container{
+#header_container {
     width: auto;
-    display:flex;
+    display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
 }
-#header_container a{
+
+#header_container a {
     margin-right: 20px;
 }
 
@@ -98,8 +104,10 @@ body {
     background-image: url(/img/kost-unsplash.jpg);
 }
 
-#container1, #container2, #container3{
-    flex-direction:column;
+#container1,
+#container2,
+#container3 {
+    flex-direction: column;
     justify-content: space-between;
     background-size: cover;
     background-repeat: no-repeat;
@@ -114,11 +122,13 @@ body {
 
 }
 
-#container1:hover, #container2:hover, #container3:hover{
+#container1:hover,
+#container2:hover,
+#container3:hover {
     transform: scale(1.1);
 }
 
-.box-header{
+.box-header {
     background-color: rgba(128, 128, 128, 0.53);
     height: 40px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
@@ -126,24 +136,24 @@ body {
     border-top-right-radius: 15px;
 }
 
-.box-header h2{
+.box-header h2 {
     margin: 8px;
     text-align: center;
     font-size: 20px;
 
 }
 
-.box-footer{
+.box-footer {
     height: 70px;
     background-color: rgba(128, 128, 128, 0.361);
 }
 
-.box-footer p{
+.box-footer p {
     margin: 5px;
 
 }
 
-a{
+a {
     text-decoration: none;
 
 }
@@ -152,31 +162,81 @@ a{
 
 /* Artikel hemsidans css: */
 
-#wrapper_article{
+#wrapper_article {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10vh 1fr 10vh;
-    grid-template-areas: 
-    'he he he'
-    'sc sc sc'
-    'ft ft ft';
+    grid-template-rows: 10vh 90vh 17.5vh;
+    grid-template-areas:
+        'he he he'
+        'sc sc sc'
+        'ft ft ft';
     height: 100vh;
 }
 
-#header_article{
+#header_article {
     grid-area: he;
-    background-color: #9b59b6;
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 3px solid #9b59b6;
 }
 
-#section_article{
+#header_article img {
+    height: 30px;
+    padding: 10px;
+    padding-left: 15px;
+}
+
+#header_article a {
+    text-decoration: none;
+    color: black;
+}
+
+#section_article {
     grid-area: sc;
-    background-color: #bc6ddb;
+    background-color: #ffffff;
+    padding-top: 15px;
 }
 
-#footer_article{
+#section_article h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 35px;
+
+}
+
+.card_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: 25px;
+    margin: 40px 90px;
+    flex-wrap: wrap;
+    border: 5px solid #9b59b6;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow:4px 10px 15px 7px #ddd;
+}
+
+.cards {
+    color: black;
+    outline: 1px solid red;
+    width: 20rem;
+    height: 10rem;
+}
+
+#footer_article {
     grid-area: ft;
-    background-color: #9b59b6;
+    background-color: #ffffff;
+    margin: 10px;
+    box-sizing: border-box;
+    border-top: 2px solid #ddd;
 }
-
-
-

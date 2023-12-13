@@ -155,6 +155,7 @@ body::-webkit-scrollbar {
 
 a {
     text-decoration: none;
+    color: white;
 
 }
 
@@ -256,4 +257,21 @@ a {
 
 #card2{
     background-image: url(/img/traning.jpg);
+}
+
+#card3{
+    background-image: url(/img/yoga.jpg);
+}
+
+#card4{
+    background-image: url(/img/diagnos.jpg);
+}
+
+#card5{
+    background: url(/img/food.jpg);
+    background-size: cover;
+}
+
+#card6{
+    background-image: url(/img/sick.jpg);
 }

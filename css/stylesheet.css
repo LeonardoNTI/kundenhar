@@ -228,9 +228,10 @@ a {
 
 .cards {
     color: black;
-    outline: 1px solid red;
-    width: 20rem;
-    height: 10rem;
+    border-radius: 10px;
+    width: 20rem;   
+    height: 12rem;
+    
 }
 
 #footer_article {
@@ -239,4 +240,8 @@ a {
     margin: 10px;
     box-sizing: border-box;
     border-top: 2px solid #ddd;
+}
+
+#card1{
+    background-image: url(/img/lungor.jpg);
 }

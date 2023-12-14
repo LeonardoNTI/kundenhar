@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 
 
 
-.mainHeader {
+header {
     grid-area: he;
     background-color: white;
     position: fixed;
@@ -33,23 +33,35 @@ body::-webkit-scrollbar {
     border-bottom: 3px solid #9b59b6;
 }
 
-.mainHeader img {
+header img {
     height: 30px;
     padding: 10px;
     padding-left: 15px;
 }
 
-.mainHeader a {
+header a {
     text-decoration: none;
     color: black;
+}
+
+header h1 {
+    border-right: 5px solid #000000;
+    border-left: 5px solid #000000;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 #header_container {
     width: auto;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    margin: 10px 40px;
+    border-right: 5px solid #000000;
+    border-left: 5px solid #000000;
+    padding-left: 15px;
 }
 
 #header_container a {
@@ -156,7 +168,6 @@ body::-webkit-scrollbar {
 a {
     text-decoration: none;
     color: white;
-
 }
 
 
@@ -166,7 +177,7 @@ a {
 #wrapper_article {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10vh 140vh 17.5vh;
+    grid-template-rows: 10vh 125vh auto;
     grid-template-areas:
         'he he he'
         'sc sc sc'
@@ -174,43 +185,29 @@ a {
     height: 100vh;
 }
 
-#header_article {
-    grid-area: he;
-    background-color: white;
-    position: fixed;
-    width: 100vw;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-bottom: 3px solid #9b59b6;
-}
-
-#header_article img {
-    height: 30px;
-    padding: 10px;
-    padding-left: 15px;
-}
-
-#header_article a {
-    text-decoration: none;
-    color: black;
-}
 
 #section_article {
     grid-area: sc;
-    background-color: #ffffff;
-    padding-top: 15px;
+    background-color: #ca75ec;
+    padding-top: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #section_article h1 {
     text-align: center;
     font-weight: 900;
-    font-size: 30px;
-
+    font-size: 45px;
+    letter-spacing: 6px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: white;
+    border-bottom: 5px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 10px;
+    width: 350px;
 }
 
 .cards h2 {
@@ -223,19 +220,25 @@ a {
     justify-content: center;
     gap: 40px;
     padding: 25px;
-    margin: 30px 90px;
+    margin: 15px 90px;
     flex-wrap: wrap;
-    border: 5px solid #9b59b6;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 4px 10px 15px 7px #ddd;
-    height: 50rem;
+    height: auto;
+    width: 70rem;
 }
+
+.card_wrapper a {
+    transition: all 0.4s ease-in-out;
+}
+
+.card_wrapper a:hover {
+    transform: scale(1.05);
+}
+
 
 .cards {
     color: black;
     border-radius: 10px;
-    width: 20rem;
+    width: 16rem;
     height: 20rem;
     flex-direction: column;
     justify-content: space-between;
@@ -246,33 +249,51 @@ a {
     color: white;
     display: flex;
     transition: all 0.5s ease-in-out;
+    filter: grayscale(0.8);
 }
 
 #footer_article {
     grid-area: ft;
-    background-color: #ffffff;
-    margin: 10px;
+    background-color: #9b59b6;
     box-sizing: border-box;
-    border-top: 2px solid #ddd;
+    border-top: 2px solid #d19de6;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
 }
+
+.footer-slogan{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 
 #card1 {
     background-image: url(/img/lungor.jpg);
-    background-position-x: -95px;
+    background-position-x: -120px;
+
+
 }
+
 #card2 {
     background-image: url(/img/traning.jpg);
 }
+
 #card3 {
     background-image: url(/img/yoga.jpg);
 }
+
 #card4 {
     background-image: url(/img/diagnos.jpg);
 }
+
 #card5 {
     background: url(/img/food.jpg);
     background-size: cover;
 }
+
 #card6 {
     background-image: url(/img/sick.jpg);
 }
@@ -300,6 +321,6 @@ a {
     text-align: center;
 }
 
-.cards :hover{
-    transform: scale(1.1);
+.cards:hover {
+    filter: grayscale(0);
 }

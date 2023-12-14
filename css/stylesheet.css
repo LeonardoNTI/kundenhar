@@ -213,6 +213,10 @@ a {
 
 }
 
+.cards h2 {
+    margin: 0;
+}
+
 .card_wrapper {
     display: flex;
     flex-direction: row;
@@ -224,14 +228,14 @@ a {
     border: 5px solid #9b59b6;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    box-shadow:4px 10px 15px 7px #ddd;
+    box-shadow: 4px 10px 15px 7px #ddd;
     height: 50rem;
 }
 
 .cards {
     color: black;
     border-radius: 10px;
-    width: 20rem;   
+    width: 20rem;
     height: 20rem;
     flex-direction: column;
     justify-content: space-between;
@@ -240,6 +244,8 @@ a {
     background-position: center;
     box-shadow: 3px 5px 5px 1px rgba(0, 0, 0, 0.3);
     color: white;
+    display: flex;
+    transition: all 0.5s ease-in-out;
 }
 
 #footer_article {
@@ -250,28 +256,50 @@ a {
     border-top: 2px solid #ddd;
 }
 
-#card1{
+#card1 {
     background-image: url(/img/lungor.jpg);
     background-position-x: -95px;
 }
-
-#card2{
+#card2 {
     background-image: url(/img/traning.jpg);
 }
-
-#card3{
+#card3 {
     background-image: url(/img/yoga.jpg);
 }
-
-#card4{
+#card4 {
     background-image: url(/img/diagnos.jpg);
 }
-
-#card5{
+#card5 {
     background: url(/img/food.jpg);
     background-size: cover;
 }
-
-#card6{
+#card6 {
     background-image: url(/img/sick.jpg);
+}
+
+
+.cards-header {
+    background-color: rgba(128, 128, 128, 0.792);
+    height: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-footer {
+    background-color: rgba(128, 128, 128, 0.792);
+    height: 70px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    text-align: center;
+}
+
+.cards :hover{
+    transform: scale(1.1);
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
 body {
     margin: 0px;
 }
@@ -131,7 +133,15 @@ header h1 {
     height: 200px;
     transition: all 0.5s ease-in-out;
     color: white;
+}
 
+#container1 p, #container2 p, #container3 p {
+    font-weight: 500;
+    font-family: "montserrat";
+}
+
+#container1 h2, #container2 h2, #container3 h2 {
+    font-family: "montserrat";
 }
 
 #container1:hover,
@@ -157,7 +167,7 @@ header h1 {
 
 .box-footer {
     height: 70px;
-    background-color: rgba(128, 128, 128, 0.361);
+    background-color: rgba(128, 128, 128, 0.701);
 }
 
 .box-footer p {
@@ -327,24 +337,78 @@ footer {
 
 /* Lung artikel css: */ 
 
-#wrapper_lungor{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10vh 125vh auto;
-    grid-template-areas:
-        'he he he'
-        'sc sc sc'
-        'ft ft ft';
-    height: 100vh;
-}
-
-.lungor_aside{
-    grid-area: aside;
-    background-color: #9b59b6;
-}
-
 .lungor_section{
-    grid-area: section;
+    background-color: rgb(255, 255, 255);
+    height: 150vh;
+
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-areas:    
+    "nav content nothing";
+}
+
+.lungor_nav{
+    grid-area: nav;
+    background-color:#ca75ec;
+    box-shadow: 3px 0px 4px 0px rgba(0, 0, 0, 0.3);
+    padding-top: 7rem;
+    line-height: 50px;
+}
+
+.lungor_nothing{
+    grid-area: nothing;
+    background-color:#ca75ec;
+    box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.lungor_content{
+    grid-area: content;
+    margin-top: 7rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.lungor_content img {
+    width: 600px;
+    height: 300px;
+}
+
+.lungor_content p {
+    padding-left: 20px;
+}
+
+.lungor_content h1 {
+    padding-bottom: 3rem;
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+.lungor_nav {
     background-color: #ca75ec;
+    box-shadow: 3px 0px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.lungor_nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lungor_nav li {
+    margin-left: 20px;
+}
+
+.lungor_nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.lungor_nav a:hover {
+    text-decoration: underline;
 }
 

@@ -328,11 +328,13 @@ footer {
 /* Lung artikel css: */ 
 
 #wrapper_lungor{
-   display: grid;
-   grid-template-columns: 10% 80% 10% ;
-   grid-template-rows: 100%;
-   grid-template-areas: 
-   "aside section aside";
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 125vh auto;
+    grid-template-areas:
+        'he he he'
+        'sc sc sc'
+        'ft ft ft';
     height: 100vh;
 }
 

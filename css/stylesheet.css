@@ -31,7 +31,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-left: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "montserrat";
     border-bottom: 3px solid #9b59b6;
 }
 
@@ -44,6 +44,7 @@ header img {
 header a {
     text-decoration: none;
     color: black;
+    font-weight: 600;
 }
 
 header h1 {
@@ -52,6 +53,10 @@ header h1 {
     display: inline-block;
     padding-right: 10px;
     padding-left: 10px;
+}
+
+header h1:hover{
+    color: #9b59b6;
 }
 
 #header_container {
@@ -72,7 +77,6 @@ header h1 {
 
 #header_container a:hover {
     color: #9b59b6;
-    font-weight: 800;
 }
 
 
@@ -91,7 +95,7 @@ header h1 {
     background-image: url(/img/Landing-page-backgrund-right.png), url(/img/Landing-page-backgrund-left.png);
     background-position: right, left;
     background-size: 36rem;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     display: flex;
     justify-content: space-between;
     padding: 0px 290px;
@@ -218,6 +222,7 @@ a {
     display: inline-block;
     padding-bottom: 10px;
     width: 350px;
+    font-family: "montserrat";
 }
 
 .cards h2 {
@@ -259,6 +264,7 @@ a {
     display: flex;
     transition: all 0.5s ease-in-out;
     filter: grayscale(0.8);
+    font-family: "montserrat";
 }
 
 footer {
@@ -271,11 +277,12 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px;
+    font-family: "montserrat";
 }
 
 .footer-slogan{
     font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "montserrat";
 }
 
 
@@ -328,6 +335,7 @@ footer {
     border-bottom-right-radius: 10px;
     display: flex;
     text-align: center;
+    font-size: 14px;
 }
 
 .cards:hover {
@@ -345,6 +353,7 @@ footer {
     grid-template-columns: 20% 1fr 20%;
     grid-template-areas:    
     "nav content nothing";
+    font-family: "montserrat";
 }
 
 .lungor_nav{
